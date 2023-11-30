@@ -1,0 +1,123 @@
+@font-face {
+    font-family: bandai;
+    src: url(medias/bandaifont.ttf);
+}
+*{
+    font-family: 'bandai';
+    margin: 0;
+    padding: 0;
+}
+.containermusicfilm{
+    width: 100%;
+    height: 100vh;
+    background-image: url(/medias/dc.png) ;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.logo{
+    cursor: pointer;
+}
+nav{
+    flex: 1;
+    text-align: center;
+    padding-top: 50px;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 70px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover{
+    color: rgb(52, 187, 52);
+}
+.row{
+    display: flex;
+    height: 88%;
+    align-items: center;
+}
+.col{
+    flex-basis: 50%;
+    margin: 50px;
+    margin-left: 100px ;
+}
+.containermusicfilm h1{
+    color: white;
+    font-size: 100px;
+}
+.containermusicfilm p{
+    color: white;
+    font-size: 15px;
+    line-height: 15px;
+}
+.containermusicfilm a{
+    color: white;
+}
+.containermusicfilm button{
+    width: 200px;
+    font-size: 12px;
+    padding: 12px;
+    background: white;
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 30px;
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+.containermusicfilm button a{
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+}
+.card{
+    width: 230px;
+    height:230px;
+    display: inline-block;
+    border-radius: 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 15px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 10px;
+}
+h5{
+    color: white;
+}
+.card1{
+    background-image: url(medias/9d368df1c9ae312cfeda6c202657f7ce.jpg);
+}
+.card2{
+    background-image: url(medias/8e099b0f6e40f363cf8f5649f689d07b.jpg);
+}
+.card3{
+    background-image: url(medias/7b7125519448e8015eb7db1bdb060fb9.jpg);
+}
+.card4{
+    background-image: url(medias/190592ede86175ef4911e622d0784010.jpg);
+}
+.hover-text {
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.3s ease-in-out;
+}
+.card:hover .hover-text {
+    opacity: 1;
+}

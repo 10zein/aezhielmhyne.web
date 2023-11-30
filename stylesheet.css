@@ -1,0 +1,272 @@
+@font-face {
+    font-family: bandai;
+    src: url(medias/bandaifont.ttf);
+}
+*{
+    font-family: 'bandai';
+    margin: 0;
+    padding: 0;
+}
+/* container for log-in page */
+.containerlog{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(medias/maun.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.content{
+    text-align: center;
+}
+.content h1{
+    font-size: 100px;
+    margin-bottom: 50px;
+    color: white;
+}
+.content a{
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+    border: 2px solid white;
+    border-radius: 50px;
+    padding: 15px 35px;
+    transition: 0.3s;
+}
+.content a:hover{
+    background-color: white;
+    color: black;
+}
+.backgroundvideo{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+@media (min-aspect-ratio:16/9){
+    .backgroundvideo{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio:16/9) {
+    .backgroundvideo{
+        width: auto;
+        height: 100%;
+    }
+}
+
+/*CSS FOR HOME*/
+
+.containerhome{
+    background-color: beige;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh; 
+    background-attachment: fixed;
+}
+.logo{
+    cursor: pointer;
+}
+nav{
+    flex: 1;
+    text-align: center;
+    padding-top: 50px;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 70px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover{
+    color: rgb(52, 187, 52);
+}
+.containerhome h1{
+    font-size: 130px;
+    text-align: center;
+    justify-content: center;
+    margin-top: 200px;
+}
+.containerhome p{
+    margin-top: 30px;
+    font-size: 40px;
+    text-align: center;
+}
+.contenthomea{
+    padding-top: 100px;
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    background-attachment: fixed;
+}
+.contenthomea p{
+    color: white;
+}
+.piccontent{
+    margin-top: 100px;
+    width: 50%;
+    height: 500px;
+    border: 1px solid white;
+    margin-left: 50px;
+    overflow: hidden;
+    float: left;
+}
+.piccontent img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.infocontent{
+    margin-top: 100px;
+    width: 40%;
+    height: 500px;
+    margin-right: 50px;
+    overflow: hidden;
+    float: right;
+}
+
+.infocontent h1{
+    margin-top: 150px;
+    text-align: center;
+    color: white;
+}
+.infocontent p{
+    text-align: center;
+    margin-top: 30px;
+    color: white;
+}
+.contenthomeb{
+    padding-top: 100px;
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    background-attachment: fixed;
+}
+.contenthomeb .piccontent{
+    margin-top: 100px;
+    width: 50%;
+    height: 500px;
+    border: 1px solid white;
+    margin-right: 50px;
+    overflow: hidden;
+    float: right;
+}
+.contenthomeb .infocontent{
+    margin-top: 100px;
+    width: 40%;
+    height: 500px;
+    margin-left: 20px;
+    overflow: hidden;
+    float: left;
+}
+/*container for music page*/
+
+.containermusicfilm{
+    width: 100%;
+    height: 100vh;
+    background-image:url(/medias/dc.png);
+    background-position: center;
+    background-size: cover;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+}
+.row{
+    display: flex;
+    height: 88%;
+    align-items: center;
+}
+.col{
+    flex-basis: 50%;
+    margin: 50px;
+}
+.containermusicfilm h1{
+    color: white;
+    font-size: 100px;
+}
+.containermusicfilm p{
+    color: white;
+    font-size: 15px;
+    line-height: 15px;
+}
+.containermusicfilm a{
+    color: white;
+}
+.containermusicfilm button{
+    width: 200px;
+    font-size: 12px;
+    padding: 12px;
+    background: white;
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 30px;
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+.containermusicfilm button a{
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+}
+.card{
+    width: 230px;
+    height:230px;
+    display: inline-block;
+    border-radius: 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 15px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 10px;
+}
+h5{
+    color: white;
+}
+.card1{
+    background-image: url(medias/9d368df1c9ae312cfeda6c202657f7ce.jpg);
+}
+.card2{
+    background-image: url(medias/8e099b0f6e40f363cf8f5649f689d07b.jpg);
+}
+.card3{
+    background-image: url(medias/7b7125519448e8015eb7db1bdb060fb9.jpg);
+}
+.card4{
+    background-image: url(medias/190592ede86175ef4911e622d0784010.jpg);
+}
+.hover-text {
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.3s ease-in-out;
+}
+.card:hover .hover-text {
+    opacity: 1;
+}

@@ -1,0 +1,125 @@
+@font-face {
+    font-family: bandai;
+    src: url(medias/bandaifont.ttf);
+}
+*{
+    font-family: 'bandai';
+    margin: 0;
+    padding: 0;
+}
+
+/*CSS FOR HOME*/
+
+.containerhome{
+    background-color: beige;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh; 
+    background-attachment: fixed;
+}
+.logo{
+    cursor: pointer;
+}
+nav{
+    flex: 1;
+    text-align: center;
+    padding-top: 50px;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 70px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+    transition: color 0.3s ease;
+}
+nav ul li a:hover{
+    color: rgb(52, 187, 52);
+}
+.containerhome h1{
+    font-size: 130px;
+    text-align: center;
+    justify-content: center;
+    margin-top: 200px;
+}
+.containerhome p{
+    margin-top: 30px;
+    font-size: 40px;
+    text-align: center;
+}
+.contenthomea{
+    width: 100%;
+    background-color: black;
+    height: 100vh;
+}
+.contenthomea h1{
+    color: white;
+    text-align: center;
+}
+.contenthomea p{
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+}
+.picsectiona{
+    width: 45%;
+    height: 450px;
+    float: left;
+    overflow: hidden;
+    border: 1px solid white;
+    margin-top:150px;
+    margin-left: 50px;
+}
+.picsectiona img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.lyricsectiona{
+    margin-right: 50px;
+    width: 44%;
+    float: right;
+    margin-top: 280px;
+}
+/*for b*/
+.contenthomeb{
+    width: 100%;
+    background-color: black;
+    height: 100vh;
+}
+.contenthomeb h1{
+    color: white;
+    text-align: center;
+}
+.contenthomeb p{
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+}
+.picsectionb{
+    width: 45%;
+    height: 450px;
+    float: right;
+    overflow: hidden;
+    border: 1px solid white;
+    margin-top:150px;
+    margin-right: 50px;
+}
+.picsectionb img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.lyricsectionb{
+    margin-left: 50px;
+    width: 44%;
+    float: left;
+    margin-top: 280px;
+}
